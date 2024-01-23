@@ -10,6 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         'buttonBlue': '#4762FF',
+        'grayBg': '#F6F8F7',
+        'cardBg': '#E9ECF3',
+        'titleColor': '#333333',
+        
+
       }
     },
   },

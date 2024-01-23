@@ -17,10 +17,12 @@ export default function Component() {
         }}
       />
       <div className="relative bg-black bg-opacity-50 h-full flex flex-col justify-center items-center px-4 md:px-6 lg:px-8">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center">
-        Vendé tu auto.
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-3">
+        Vendé tu auto.</h1>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-3">
         Fácil, rápido y seguro.
-        </h1>
+        </h2>
+        
         <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white text-center">En J&M lo hacemos posible.</p>
         <Link
           className="mt-6 inline-flex items-center justify-center px-6 py-3 border border-buttonBlue text-base font-medium rounded-md  text-white bg-buttonBlue hover:border-white duration-300 md:py-4 md:text-lg md:px-10"

@@ -2,15 +2,18 @@
  * v0 by Vercel.
  * @see https://v0.dev/t/jAcfIIDV1ib
  */
+import Image from "next/image"
 import Link from "next/link"
+import { deal } from "@/public"
 
 export default function Component() {
   return (
     <section className="relative w-full h-[600px] md:h-[600px] lg:h-[700px]">
-      <img
+      <Image
         alt="Luxury Car"
+        priority={true}
         className="absolute inset-0 object-cover w-full h-full"
-        src="/deal.jpg"
+        src={deal}
         style={{
           aspectRatio: "1920/700",
           objectFit: "cover",

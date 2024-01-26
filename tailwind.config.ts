@@ -13,6 +13,7 @@ const config: Config = {
         'grayBg': '#F6F8F7',
         'cardBg': '#E9ECF3',
         'titleColor': '#333333',
+        'footerBg': '#1A1A1A'
         
 
       }

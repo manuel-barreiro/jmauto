@@ -11,7 +11,7 @@ export default function Component() {
         className="absolute inset-0 object-cover w-full h-full"
         src={handshake}
       />
-      <div className="absolute inset-0 bg-buttonBlue opacity-50 mix-blend-multiply" />
+      <div className="absolute inset-0 bg-buttonBlue opacity-65 mix-blend-multiply" />
       <div className="relative container px-4 md:px-6">
           <div className="flex flex-col justify-evenly items-start gap-4">
               <div className="inline-block rounded-lg px-3 py-1 text-sm dark:bg-gray-800 text-white">Sobre nosotros</div>
@@ -28,7 +28,7 @@ export default function Component() {
                 ¡VenÍ y conocé a nuestro equipo! Estamos para ayudarte.
               </p>
             </div>
-            <ul className="py-4">
+            <ul className="py-4 hidden md:block">
               <li className="text-white">
                 <CheckIcon className="mr-2 inline-block h-4 w-4 text-white" />
                 Somos una concesionaria familiar, con amplia experiencia en el rubro.

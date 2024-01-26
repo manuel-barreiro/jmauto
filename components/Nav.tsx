@@ -143,7 +143,7 @@ const Nav = () => {
                                                 ease: "easeIn", 
                                             }}
                                         >
-                                            Home
+                                            ¿Quiénes somos?
                                         </motion.li>
                                     </Link>
                                     <Link 
@@ -160,7 +160,7 @@ const Nav = () => {
                                                 ease: "easeIn", 
                                             }}
                                         >
-                                            Productos
+                                            Nuestra agencia
                                         </motion.li>
                                     </Link>
                                     <Link
@@ -177,7 +177,7 @@ const Nav = () => {
                                                 ease: "easeIn", 
                                             }}
                                         >
-                                            Servicio Técnico
+                                            Cotizá tu auto
                                         </motion.li>
                                     </Link>
                                     <Link href="/contacto" onClick={handleShowMenu}>
@@ -190,7 +190,7 @@ const Nav = () => {
                                             className='px-4 py-2 rounded-md text-white bg-buttonBlue border border-buttonBlue hover:bg-white
                                             hover:text-buttonBlue duration-300 w-full'
                                         >
-                                            Contacto
+                                            Contactanos
                                         </button>
                                       </motion.li>
                                     </Link>

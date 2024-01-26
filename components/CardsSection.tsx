@@ -4,10 +4,13 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link"
+import { FaArrowRight } from "react-icons/fa6";
+import { FaCarOn } from "react-icons/fa6";
+import { FaMoneyBills } from "react-icons/fa6";
 
 export default function Component() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-grayBg">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Compramos tu auto en tiempo récord.</h2>
@@ -15,28 +18,25 @@ export default function Component() {
           En J&M, simplificamos la venta de tu auto para que sea una experiencia ágil, sin complicaciones y totalmente segura.
           </p>
         </div>
-        <div className="grid gap-6 mt-10 md:grid-cols-2 md:gap-12">
-          <div className="flex flex-col justify-center items-start space-y-4">
-            <CurrencyIcon className="h-12 w-12 text-gray-900" />
+        <div className="mt-10 flex justify-evenly items-start flex-wrap gap-10">
+          <div className="flex flex-col justify-center items-start space-y-4 bg-cardBg p-6 rounded-lg">
+            <FaCarOn className="h-12 w-12 text-gray-900" />
             <h3 className="text-2xl font-bold tracking-tighter">Venta Inmediata</h3>
             <p className="max-w-[300px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
-              Cotizamos tu automóvil, realizas la entrega y recibís el pago en pesos directamente en tu cuenta
+              Cotizamos tu automóvil, realizas la entrega y recibís el pago en pesos directamente en tu cuenta. Así de simple.
             </p>
-            <Link href={'#'}>
-              Contactate con nosotros
+            <Link href={'#'} className="flex items-center gap-2 hover:underline underline-offset-8">
+            <FaArrowRight/>Contactate con nosotros
             </Link>
           </div>
-          <div className="flex flex-col items-center space-y-4">
-            <UsersIcon className="h-12 w-12 text-gray-900 dark:text-gray-50" />
+          <div className="flex flex-col justify-center items-start space-y-4 bg-cardBg p-6 rounded-lg">
+            <FaMoneyBills className="h-12 w-12 text-gray-900" />
             <h3 className="text-2xl font-bold tracking-tighter">Venta en consignación</h3>
-            <p className="max-w-[300px] text-center text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
-            Entregas tu automóvil y nosotros nos encargamos de venderlo. Vas a recibir el dinero luego de que se venda.
+            <p className="max-w-[300px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
+            Entregas tu automóvil y nosotros nos encargamos de venderlo. Vas a recibir el dinero luego de la venta.
             </p>
-            <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-              href="#"
-            >
-              Contactate con nosotros
+            <Link href={'#'} className="flex items-center gap-2 hover:underline underline-offset-8">
+              <FaArrowRight/>Contactate con nosotros
             </Link>
           </div>
         </div>

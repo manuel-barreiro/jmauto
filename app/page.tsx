@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import CardsSection from "@/components/CardsSection";
 import Footer from "@/components/Footer";
 import WhoAreWe from "@/components/WhoAreWe";
+import VisitUs from "@/components/VisitUs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <CardsSection />
       <WhoAreWe/>
+      <VisitUs />
       <Footer />
     </>
   );

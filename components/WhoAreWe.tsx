@@ -12,16 +12,16 @@ export default function Component() {
         src={handshake}
       />
       <div className="absolute inset-0 bg-buttonBlue opacity-65 mix-blend-multiply" />
-      <div className="relative container px-4 md:px-6">
+      <div className="relative container px-4 md:px-6 font-semibold">
           <div className="flex flex-col justify-evenly items-start gap-4">
-              <div className="inline-block rounded-lg px-3 py-1 text-sm dark:bg-gray-800 text-white">Sobre nosotros</div>
+              <div className="inline-block rounded-lg px-3 py-1 text-sm bg-gray-800 text-white">Sobre nosotros</div>
               <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">¿Quiénes somos?</h2>
               <p className="max-w-[600px] text-white md:text-md/relaxed lg:text-base/relaxed xl:text-md/relaxed">
-                En <span className="font-bold">J&M</span>, nos apasiona brindarte una experiencia excepcional en la adquisición de automóviles. Desde nuestros inicios, nos hemos dedicado a proporcionar a nuestros clientes no solo vehículos de calidad, sino también un servicio personalizado y confiable.
+                En <span className="font-black">J&M</span>, nos apasiona brindarte una experiencia excepcional en la adquisición de automóviles. Desde nuestros inicios, nos hemos dedicado a proporcionar a nuestros clientes no solo vehículos de calidad, sino también un servicio personalizado y confiable.
               
               </p>
               <p className="max-w-[600px] text-white md:text-md/relaxed lg:text-base/relaxed xl:text-md/relaxed">
-                Valoramos la <span className="font-bold">transparencia</span>, la <span className="font-bold">integridad</span> y la <span className="font-bold">satisfacción del cliente</span>, aspectos que nos han convertido en un referente en la industria automotriz.
+                Valoramos la <span className="font-black">transparencia</span>, la <span className="font-black">integridad</span> y la <span className="font-black">satisfacción del cliente</span>, aspectos que nos han convertido en un referente en la industria automotriz.
               </p>
 
               <p className="max-w-[600px] text-white md:text-md/relaxed lg:text-base/relaxed xl:text-md/relaxed">
@@ -44,13 +44,13 @@ export default function Component() {
             </ul>
             <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium shadow transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 focus-visible:ring-gray-300"
                 href="#"
               >
                 Contactanos
               </Link>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 text-gray-50 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 border-gray-800 bg-gray-950 hover:bg-gray-800 focus-visible:ring-gray-300 text-gray-200"
                 href="#"
               >
                 Vendé tu auto

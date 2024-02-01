@@ -16,28 +16,51 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { useToast } from "@/components/ui/use-toast"
 
 const formSchema = z.object({
   nombre: z.string().min(2, {
-    message: "Nombre mal",
+    message: "Ingrese un nombre válido",
   }),
   email: z.string().email({
-    message: "Please enter a valid email.",
+    message: "Ingrese un correo válido",
   }),
   telefono: z.string().min(2, {
-    message: "Telefono mal.",
+    message: "Ingrese un teléfono válido",
   }),
   mensaje: z
     .string()
     .min(10, {
-      message: "Msj must be at least 10 characters.",
+      message: "Mínimo 10 caracteres",
     })
     .max(160, {
-      message: "Msj must not be longer than 30 characters.",
+      message: "Máximo 160 caracteres",
+    }),
+    marca: z.string().min(2, {
+      message: "Ingrese marca válida",
+    }),
+    modelo: z.string().min(2, {
+      message: "Ingrese modelo válido",
+    }),
+    ano: z.string().min(4, {
+      message: "Ingrese año válido",
+    }),
+    kilometraje: z.string().min(2, {
+      message: "Ingrese kilometraje válido",
+    }),
+    info: z
+    .string()
+    .min(10, {
+      message: "Mínimo 10 caracteres",
+    })
+    .max(160, {
+      message: "Máximo 160 caracteres",
     }),
 })
 
 export default function ContactForm() {
+  const { toast } = useToast()
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -46,6 +69,11 @@ export default function ContactForm() {
       email: "",
       telefono: "",
       mensaje: "",
+      marca: "",
+      modelo: "",
+      ano: "",
+      kilometraje: "",
+      info: "",
     },
   })
 
@@ -54,17 +82,26 @@ export default function ContactForm() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values)
+    toast({
+      title: "You submitted the following values:",
+      description: (
+        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+          <code className="text-white">Nahee</code>
+        </pre>
+      ),
+    })
   }
 
   return (
-    <section className="py-10">
+    <section>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-10 w-full" >
           {/* Inputs */}
-          <div className="flex flex-col md:flex-row justify-evenly">
+          <div className="flex flex-col md:flex-row justify-evenly gap-10 md:gap-0">
+
             {/* Client Info */}
             <div className="flex flex-col gap-5 w-full px-20">
-              <p className="text-xl font-bold">Información personal</p>
+              <p className="text-2xl font-extrabold">Información personal</p>
               <FormField
                 control={form.control}
                 name="nombre"
@@ -79,34 +116,40 @@ export default function ContactForm() {
                 )}
               />
 
-              <div className="flex justify-around">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+              <div className="flex justify-between gap-3">
 
-                <FormField
-                  control={form.control}
-                  name="telefono"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Teléfono</FormLabel>
-                      <FormControl>
-                        <Input placeholder="" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                <div className="w-3/5">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+                <div className="w-2/5">
+                  <FormField
+                    control={form.control}
+                    name="telefono"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Teléfono</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
 
               </div>
 
@@ -130,48 +173,105 @@ export default function ContactForm() {
             </div>
 
             {/* Car Info */}
-            <div className="flex flex-col gap-5 w-full px-20" >
-            <p className="text-xl font-bold">Datos del vehículo</p>
+            <div className="flex flex-col gap-5 w-full px-20">
+              <p className="text-2xl font-extrabold">Datos del vehículo</p>
+
+              <div className="flex justify-between gap-3">
+                <div className="w-3/6">
+                  <FormField
+                    control={form.control}
+                    name="marca"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Marca</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+                <div className="w-3/6">
+                  <FormField
+                    control={form.control}
+                    name="modelo"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Modelo</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+
+              </div>
+
+              <div className="flex justify-between gap-3">
+                <div className="w-3/6">
+                  <FormField
+                    control={form.control}
+                    name="ano"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Año</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+                <div className="w-3/6">
+                  <FormField
+                    control={form.control}
+                    name="kilometraje"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Kilometraje</FormLabel>
+                        <FormControl>
+                          <Input className="w-full" placeholder="" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+
+
+              </div>
 
               <FormField
                 control={form.control}
-                name="nombre"
+                name="info"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Nombre</FormLabel>
+                    <FormLabel>Información adicional</FormLabel>
                     <FormControl>
-                      <Input placeholder="shadcn" {...field} />
+                      <Textarea 
+                        placeholder=""
+                        className="resize-none"
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormDescription>
-                      Ingresá tu nombre
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="shadcn" {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      Ingresá tu email
-                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
               />
             </div>
+
           </div>
           
           {/* Submit button */}
           <div className="flex justify-center">
-            <Button type="submit" className="px-20">Enviar</Button>
+            <Button type="submit" className="w-full max-w-xs md:max-w-lg xl:max-w-xl">Enviar</Button>
           </div>
         </form>
       </Form>

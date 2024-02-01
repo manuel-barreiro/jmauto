@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import WhoAreWe from "@/components/WhoAreWe";
 import VisitUs from "@/components/VisitUs";
 import ContactUs from "@/components/ContactUs";
-import ContactForm from "@/components/ContactForm";
+import CotizaTuVehiculo from "@/components/CotizaTuVehiculo";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <CardsSection />
       <WhoAreWe/>
       <VisitUs />
-      <ContactForm />
+      <CotizaTuVehiculo />
       <ContactUs />
       <Footer />
     </>

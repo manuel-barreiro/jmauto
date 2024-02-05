@@ -16,7 +16,10 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+
+import { ToastAction } from "@/components/ui/toast"
 import { useToast } from "@/components/ui/use-toast"
+
 
 const formSchema = z.object({
   nombre: z.string().min(2, {
@@ -59,6 +62,7 @@ const formSchema = z.object({
 })
 
 export default function ContactForm() {
+
   const { toast } = useToast()
 
   // 1. Define your form.
@@ -82,18 +86,27 @@ export default function ContactForm() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values)
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">Nahee</code>
-        </pre>
-      ),
+    fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
     })
+    toast({
+      title: "Se ha enviado tu consulta",
+      description: "Te responderemos a la brevedad.",
+      action: (
+        <ToastAction altText="Goto schedule to undo">Ok</ToastAction>
+      ),
+      className: "bg-black text-white",
+    })
+    form.reset()
   }
 
   return (
     <section>
+  
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-10 w-full" >
           {/* Inputs */}

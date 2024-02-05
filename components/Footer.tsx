@@ -42,7 +42,7 @@ function Footer() {
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaLocationDot /> 
-              <span>Florida 9680, Pilar</span>
+              <span>Las Lilas 970, Manuel Alberti</span>
               </li>
             </ul>
           </div>

@@ -26,7 +26,7 @@ export default function Component() {
         Fácil, rápido y seguro.
         </h2>
         
-        <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white text-center">En J&M lo hacemos posible.</p>
+        <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white text-center">En Z&Z Automotores lo hacemos posible.</p>
         <Link
           className="mt-6 inline-flex items-center justify-center px-6 py-3 border border-buttonBlue text-base font-medium rounded-md  text-white bg-buttonBlue hover:border-white duration-300 md:py-4 md:text-lg md:px-10"
           href="#"

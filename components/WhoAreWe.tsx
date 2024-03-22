@@ -17,7 +17,7 @@ export default function Component() {
               <div className="inline-block rounded-lg px-3 py-1 text-sm bg-gray-800 text-white">Sobre nosotros</div>
               <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">¿Quiénes somos?</h2>
               <p className="max-w-[600px] text-white md:text-md/relaxed lg:text-base/relaxed xl:text-md/relaxed">
-                En <span className="font-black">J&M</span>, nos apasiona brindarte una experiencia excepcional en la adquisición de automóviles. Desde nuestros inicios, nos hemos dedicado a proporcionar a nuestros clientes no solo vehículos de calidad, sino también un servicio personalizado y confiable.
+                En <span className="font-black">Z&Z</span>, nos apasiona brindarte una experiencia excepcional en la adquisición de automóviles. Desde nuestros inicios, nos hemos dedicado a proporcionar a nuestros clientes no solo vehículos de calidad, sino también un servicio personalizado y confiable.
               
               </p>
               <p className="max-w-[600px] text-white md:text-md/relaxed lg:text-base/relaxed xl:text-md/relaxed">

@@ -54,7 +54,7 @@ const Nav = () => {
             </motion.li>
           </Link>
           <Link 
-            href="/productos"
+            href="/"
             className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-buttonBlue 
@@ -70,7 +70,7 @@ const Nav = () => {
             </motion.li>
           </Link>
           <Link 
-            href="/servicioTecnico"
+            href="/"
             className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-buttonBlue 
@@ -85,7 +85,7 @@ const Nav = () => {
                   Cotizá tu auto
             </motion.li>
           </Link>
-          <Link href="/contacto">
+          <Link href="/">
             <motion.li
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0,  opacity: 1 }}
@@ -147,7 +147,7 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link 
-                                        href="/productos"
+                                        href="/"
                                         onClick={handleShowMenu} 
                                         className='font-medium hover:text-buttonBlue hover:underline underline-offset-8 decoration-buttonBlue cursor-pointer duration-300 nav-link'
                                     >
@@ -164,7 +164,7 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link
-                                        href="/servicioTecnico"
+                                        href="/"
                                         onClick={handleShowMenu} 
                                         className='font-medium hover:text-buttonBlue hover:underline underline-offset-8 decoration-buttonBlue cursor-pointer duration-300 nav-link'
                                     >
@@ -180,7 +180,7 @@ const Nav = () => {
                                             Cotizá tu auto
                                         </motion.li>
                                     </Link>
-                                    <Link href="/contacto" onClick={handleShowMenu}>
+                                    <Link href="/" onClick={handleShowMenu}>
                                       <motion.li
                                        initial={{ x: 20, opacity: 0 }}
                                        animate={{ x: 0,  opacity: 1 }}
@@ -201,12 +201,12 @@ const Nav = () => {
                                   transition= {{ duration: 0.1, delay: 0.6 }}
                                   className="flex gap-6"
                                 >
-                                    <a href="https://www.facebook.com/PowerConsultant" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                             <FaFacebookF />
                                         </span>
                                     </a>
-                                    <a href="https://instagram.com/powerconsultantsa?igshid=MzRlODBiNWFlZA==" target="_blank">
+                                    <a href="https://instagram.com/" target="_blank">
                                         <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                             <FaInstagram />
                                         </span>

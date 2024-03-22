@@ -10,7 +10,7 @@ export default function Component() {
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Vendemos tu auto en tiempo récord.</h2>
           <p className="max-w-[500px] md:max-w-[600px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          En J&M, simplificamos la venta de tu auto para que sea una experiencia ágil, sin complicaciones y totalmente segura.
+          En Z&Z, simplificamos la venta de tu auto para que sea una experiencia ágil, sin complicaciones y totalmente segura.
           </p>
         </div>
         <div className="mt-10 flex justify-center items-start flex-wrap gap-10 md:gap-10">

@@ -30,7 +30,7 @@ export default function Component() {
             </p>
             <p className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center">
               <MdEmail />
-              jm_automoviles@gmail.com
+              ZZ_automotores@gmail.com
             </p>
           </div>
 

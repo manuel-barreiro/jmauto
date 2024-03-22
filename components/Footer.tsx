@@ -38,7 +38,7 @@ function Footer() {
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <MdEmail /> 
-              <span>jm_automoviles@gmail.com</span>
+              <span>zz_automotores@gmail.com</span>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaLocationDot /> 
@@ -52,11 +52,11 @@ function Footer() {
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaFacebook /> 
-              <span>JM_automoviles</span>
+              <span>ZZ_automotores_</span>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaInstagram/> 
-              <span>JM_automoviles</span>
+              <span>ZZ_automotores_</span>
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ function Footer() {
       </div>
 
       <div className="border-t-[1px] border-grayBg pt-4">
-        <p className="text-grayBg">© J&M Automóviles 2024. Todos los derechos reservados</p>
+        <p className="text-grayBg">© Z&Z Automotores 2024. Todos los derechos reservados</p>
       </div>
 
     </footer>

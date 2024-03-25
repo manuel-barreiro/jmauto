@@ -8,6 +8,7 @@ import ContactUs from "@/components/ContactUs";
 import CotizaTuVehiculo from "@/components/CotizaTuVehiculo";
 import WhatsappButton from "@/components/WhatsappButton";
 import { Toaster } from "@/components/ui/toaster"
+import NuestraAgencia from "@/components/NuestraAgencia";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <CardsSection />
       <WhoAreWe/>
       <VisitUs />
+      <NuestraAgencia/>
       <CotizaTuVehiculo />
       <ContactUs />
       <Footer />

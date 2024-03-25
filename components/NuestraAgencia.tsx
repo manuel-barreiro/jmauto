@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import {
   Carousel,
@@ -7,63 +9,58 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import { contact, deal, handshake } from '@/public'
+import { autos, render1, render2 } from '@/public'
 import { Card, CardContent } from './ui/card'
+import Autoplay from "embla-carousel-autoplay"
 
 
 function NuestraAgencia() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col gap-5 items-center">
-      <h2>Nuestra agencia</h2>
+    <section className="w-full flex flex-col gap-5 items-center px-2 pb-12 md:pb-24 lg:pb-32">
+      <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Nuestra agencia</h2>
       <Carousel 
+        className="w-full max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl"
         opts={{
           align: "center",
           loop: true,
         }}
-        className="w-full max-w-2xl"
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
       >
         <CarouselContent>
           <CarouselItem>
-            <Card>
-              <CardContent>
-                <Image
-                  alt="Luxury Car"
-                  priority={true}
-                  className="object-cover w-full h-full"
-                  src={contact}
-                />
-              </CardContent>
-            </Card>
+            <div className="flex items-center justify-center p-1">
+              <Image
+                alt="Image"
+                className="aspect-video object-cover rounded-md "
+                src={autos}
+
+              />
+            </div>
           </CarouselItem>
           <CarouselItem>
-            <Card>
-              <CardContent>
-                <Image
-                  alt="Luxury Car"
-                  priority={true}
-                  className="object-cover w-full h-full"
-                  src={deal}
-                />
-              </CardContent>
-            </Card>
+            <div className="flex items-center justify-center p-1">
+              <Image
+                alt="Image"
+                className="aspect-video object-cover rounded-md "
+                src={render1}
+              />
+            </div>
           </CarouselItem>
           <CarouselItem>
-            <Card>
-              <CardContent>
-                <Image
-                  alt="Luxury Car"
-                  priority={true}
-                  className="object-cover w-full h-full"
-                  src={handshake}
-                />
-              </CardContent>
-            </Card>
+            <div className="flex items-center justify-center p-1">
+              <Image
+                alt="Image"
+                className="aspect-video object-cover rounded-md "
+                src={render2}
+              />
+            </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
-
     </section>
   )
 }

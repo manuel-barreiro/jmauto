@@ -4,7 +4,7 @@ import { handshake } from "@/public"
 
 export default function Component() {
   return (
-    <section className="relative w-full py-12 md:py-24 lg:py-32">
+    <section id='quienesSomos' className="relative w-full py-12 md:py-24 lg:py-32">
       <Image
         alt="Luxury Car"
         priority={true}

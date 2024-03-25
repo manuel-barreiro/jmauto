@@ -3,7 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function Component() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section id="visitanos" className="w-full py-12 md:py-24 lg:py-32">
       <div className="px-4 md:px-6">
         <div className="flex justify-around flex-wrap gap-10">
           <div className="flex flex-col justify-center space-y-4 lg:order-last">

@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Component() {
   return (
-    <section className="relative w-full py-12 md:py-24 lg:py-32 h-[80dvh]">
+    <section id="contacto" className="relative w-full py-12 md:py-24 lg:py-32 h-[80dvh]">
       <Image
         alt="Luxury Car"
         priority={true}

@@ -5,7 +5,7 @@ import { FaMoneyBills } from "react-icons/fa6";
 
 export default function Component() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-grayBg">
+    <section id="vendeTuAuto" className="w-full py-12 md:py-24 lg:py-32 bg-grayBg">
       <div className="px-6 md:px-10">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Vendemos tu auto en tiempo récord.</h2>

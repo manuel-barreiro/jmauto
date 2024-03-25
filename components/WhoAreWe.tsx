@@ -45,13 +45,13 @@ export default function Component() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium shadow transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 focus-visible:ring-gray-300"
-                href="#"
+                href="#contacto"
               >
                 Contactanos
               </Link>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md border px-8 text-sm font-medium shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 border-gray-800 bg-gray-950 hover:bg-gray-800 focus-visible:ring-gray-300 text-gray-200"
-                href="#"
+                href="#vendeTuAuto"
               >
                 Vendé tu auto
               </Link>

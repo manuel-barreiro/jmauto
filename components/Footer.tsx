@@ -3,6 +3,7 @@ import { jmWhite } from "@/public"
 import { FaPhone, FaLocationDot, FaFacebook, FaInstagram  } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -18,10 +19,26 @@ function Footer() {
           <div>
             <h4 className="text-white text-lg font-semibold">Mapa del sitio</h4>
             <ul className="mt-2 text-white">
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">Nuestra agencia</li>
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">¿Quiénes somos?</li>
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">Cotizá tu auto</li>
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">Contactanos</li>
+              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+                <Link href='#quienesSomos'>
+                  ¿Quiénes somos?
+                </Link>  
+              </li>
+              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+                <Link href='#visitanos'>
+                  Nuestra agencia
+                </Link>  
+              </li>
+              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+                <Link href='#cotiza'>
+                  Cotizá tu auto
+                </Link>  
+              </li>
+              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+                <Link href='#contacto'>
+                  Contactanos
+                </Link>  
+              </li>       
             </ul>
           </div>
 
@@ -30,15 +47,15 @@ function Footer() {
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaPhone /> 
-              <span>+54 9 11 6672 6967</span>
+              <a href='tel:+5491166726968'>+54 9 11 6672 6967 </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaWhatsapp /> 
-              <span>+54 9 11 6672 6967</span>
+              <a href='https://wa.me/+5491133048066' target='_blank'>+54 9 11 6672 6967 </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <MdEmail /> 
-              <span>zz_automotores@gmail.com</span>
+              <a href="mailto:zz_automotores@gmail.com">zz_automotores@gmail.com </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaLocationDot /> 

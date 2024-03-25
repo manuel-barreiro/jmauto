@@ -20,7 +20,7 @@ export default function Component() {
             <p className="mb-6 max-w-[300px] md:max-w-[400px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
               Cotizamos tu automóvil, realizas la entrega y recibís el pago en pesos directamente en tu cuenta. Así de simple.
             </p>
-            <Link href={'#'} className="flex items-center gap-2 hover:underline underline-offset-8">
+            <Link href='#contacto' className="flex items-center gap-2 hover:underline underline-offset-8">
             <FaArrowRight/>Contactate con nosotros
             </Link>
           </div>
@@ -30,7 +30,7 @@ export default function Component() {
             <p className="mb-6 max-w-[300px] md:max-w-[400px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
             Entregas tu automóvil y nosotros nos encargamos de venderlo. Vas a recibir el dinero luego de la venta.
             </p>
-            <Link href={'#'} className="flex items-center gap-2 hover:underline underline-offset-8">
+            <Link href='#contacto' className="flex items-center gap-2 hover:underline underline-offset-8">
               <FaArrowRight/>Contactate con nosotros
             </Link>
           </div>

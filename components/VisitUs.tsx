@@ -25,9 +25,9 @@ export default function Component() {
             </div>
           </div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13162.087701919596!2d-58.7889375!3d-34.4388968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9edecc120bf9%3A0x776c8aee6e2174ef!2sEdificio%20Blue%20Building!5e0!3m2!1ses!2sau!4v1707133957283!5m2!1ses!2sau" width="600" height="400" loading="lazy" className="block md:hidden"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13162.087701919596!2d-58.7889375!3d-34.4388968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9edecc120bf9%3A0x776c8aee6e2174ef!2sEdificio%20Blue%20Building!5e0!3m2!1ses!2sau!4v1707133957283!5m2!1ses!2sau" width="600" height="400" loading="eager" className="block md:hidden"></iframe>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13162.087701919596!2d-58.7889375!3d-34.4388968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9edecc120bf9%3A0x776c8aee6e2174ef!2sEdificio%20Blue%20Building!5e0!3m2!1ses!2sau!4v1707133957283!5m2!1ses!2sau" width="800" height="500" loading="lazy" className="hidden md:block"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13162.087701919596!2d-58.7889375!3d-34.4388968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9edecc120bf9%3A0x776c8aee6e2174ef!2sEdificio%20Blue%20Building!5e0!3m2!1ses!2sau!4v1707133957283!5m2!1ses!2sau" width="800" height="500" loading="eager" className="hidden md:block"></iframe>
 
         </div>
       </div>

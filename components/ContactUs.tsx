@@ -20,18 +20,18 @@ export default function Component() {
             <p className="max-w-[600px] text-gray-500 md:text-xl">
               Estamos listos para ayudarte.
             </p>
-            <p className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center">
+            <a href="tel:+5491166726968" className="max-w-[600ax] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <FaPhone />
               +54 9 11 6672 6968
-            </p>
-            <p className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center">
+            </a>
+            <a href="https://wa.me/+5491133048066" target='_blank' className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <FaWhatsapp />
               +54 9 11 6672 6968
-            </p>
-            <p className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center">
+            </a>
+            <a href="mailto:zz_automotores@gmail.com" className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <MdEmail />
               ZZ_automotores@gmail.com
-            </p>
+            </a>
           </div>
 
       </div>

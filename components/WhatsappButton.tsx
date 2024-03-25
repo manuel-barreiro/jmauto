@@ -13,9 +13,9 @@ const WhatsappButton = () => {
     animate={{opacity: 1 }}
     transition= {{ duration: 1, delay: 1.5 }} 
     className='fixed z-[10000] bottom-7 right-8 md:bottom-7 md:right-7 bg-[#25D366] rounded-full p-3 hover:scale-125 ease-in-out duration-300 cursor-pointer shadow-2xl'>
-      <Link href="https://wa.me/+5491133048066" target='_blank'>
+      <a href="https://wa.me/+5491133048066" target='_blank'>
         <FaWhatsapp size={40} className='text-white' />
-      </Link>
+      </a>
     </motion.div>
   )
 }

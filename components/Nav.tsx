@@ -38,7 +38,7 @@ const Nav = () => {
       <div className="hidden lg:flex">
         <ul className="flex justify-evenly items-center gap-10 font-medium">
           <Link 
-            href="#quienesSomos"
+            href="/#quienesSomos"
             className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-buttonBlue 
@@ -54,7 +54,7 @@ const Nav = () => {
             </motion.li>
           </Link>
           <Link 
-            href="#visitanos"
+            href="/#visitanos"
             className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-buttonBlue 
@@ -70,7 +70,7 @@ const Nav = () => {
             </motion.li>
           </Link>
           <Link 
-            href="#cotiza"
+            href="/#cotiza"
             className="
                 hover:scale-105 
                 hover:underline underline-offset-8 decoration-buttonBlue 
@@ -85,7 +85,7 @@ const Nav = () => {
                   Cotizá tu auto
             </motion.li>
           </Link>
-          <Link href="#contacto">
+          <Link href="/#contacto">
             <motion.li
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0,  opacity: 1 }}
@@ -130,7 +130,7 @@ const Nav = () => {
                             <div className='flex flex-col justify-center items-center text-base gap-7'>
                                 <ul className='flex flex-col text-base gap-7'>
                                     <Link
-                                        href="#quienesSomos"
+                                        href="/#quienesSomos"
                                         onClick={handleShowMenu}
                                         className='font-medium hover:text-buttonBlue hover:underline underline-offset-8 decoration-buttonBlue cursor-pointer duration-300 nav-link'
                                     >
@@ -147,7 +147,7 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link 
-                                        href="#visitanos"
+                                        href="/#visitanos"
                                         onClick={handleShowMenu} 
                                         className='font-medium hover:text-buttonBlue hover:underline underline-offset-8 decoration-buttonBlue cursor-pointer duration-300 nav-link'
                                     >
@@ -164,7 +164,7 @@ const Nav = () => {
                                         </motion.li>
                                     </Link>
                                     <Link
-                                        href="#cotiza"
+                                        href="/#cotiza"
                                         onClick={handleShowMenu} 
                                         className='font-medium hover:text-buttonBlue hover:underline underline-offset-8 decoration-buttonBlue cursor-pointer duration-300 nav-link'
                                     >
@@ -180,7 +180,7 @@ const Nav = () => {
                                             Cotizá tu auto
                                         </motion.li>
                                     </Link>
-                                    <Link href="#contacto" onClick={handleShowMenu}>
+                                    <Link href="/#contacto" onClick={handleShowMenu}>
                                       <motion.li
                                        initial={{ x: 20, opacity: 0 }}
                                        animate={{ x: 0,  opacity: 1 }}

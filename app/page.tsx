@@ -14,7 +14,7 @@ import NuestraAgencia from "@/components/NuestraAgencia";
 export default function Home() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Hero />
       <CardsSection />
       <WhoAreWe/>
@@ -22,7 +22,7 @@ export default function Home() {
       <NuestraAgencia/>
       <CotizaTuVehiculo />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
       <WhatsappButton />
       <Toaster />
     </>

@@ -20,22 +20,22 @@ function Footer() {
             <h4 className="text-white text-lg font-semibold">Mapa del sitio</h4>
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
-                <Link href='#quienesSomos'>
+                <Link href='/#quienesSomos'>
                   ¿Quiénes somos?
                 </Link>  
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
-                <Link href='#visitanos'>
+                <Link href='/#visitanos'>
                   Nuestra agencia
                 </Link>  
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
-                <Link href='#cotiza'>
+                <Link href='/#cotiza'>
                   Cotizá tu auto
                 </Link>  
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
-                <Link href='#contacto'>
+                <Link href='/#contacto'>
                   Contactanos
                 </Link>  
               </li>       

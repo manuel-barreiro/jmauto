@@ -38,7 +38,10 @@ const config = {
         'cardBg': '#E9ECF3',
         'titleColor': '#333333',
         'footerBg': '#1A1A1A'
-      }
+      },
+      boxShadow: {
+        navbarShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -22,7 +22,7 @@ const Nav = () => {
   /* ------------------------------------------------ */
 
   return (
-    <nav className="font-montserrat flex justify-between items-center w-full h-20 lg:h-[12vh] sticky top-0 z-50 px-8 md:px-32 py-14 bg-white">
+    <nav className="font-montserrat flex justify-between items-center w-full h-16 lg:h-[10vh] sticky top-0 z-50 px-8 md:px-32 py-12 bg-white shadow-navbarShadow">
 
       <motion.div
         initial={{ opacity: 0 }}

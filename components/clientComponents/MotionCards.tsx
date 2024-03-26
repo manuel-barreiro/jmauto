@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight, FaCarOn, FaMoneyBills } from 'react-icons/fa6'
 
-const stepAnimationVariants = {
+const animationVariant = {
   initial: { y: 15, opacity: 0 },
   animate:{ y: 0, opacity: 1 },      
 }
@@ -15,7 +15,7 @@ function MotionCards() {
   return (
     <div className="mt-10 flex justify-center items-start flex-wrap gap-10 md:gap-10">
       <motion.div 
-            variants={stepAnimationVariants}
+            variants={animationVariant}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -34,7 +34,7 @@ function MotionCards() {
           </motion.div>
 
           <motion.div 
-            variants={stepAnimationVariants}
+            variants={animationVariant}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}

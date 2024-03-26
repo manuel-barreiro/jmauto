@@ -108,13 +108,13 @@ export default function ContactForm() {
     <section>
   
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-10 w-full" >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-10 w-full overflow-hidden" >
           {/* Inputs */}
           <div className="flex flex-col md:flex-row justify-evenly gap-10 md:gap-0">
 
             {/* Client Info */}
-            <div className="flex flex-col gap-5 w-full px-20">
-              <p className="text-2xl font-extrabold">Información personal</p>
+            <div className="flex flex-col gap-5 w-full px-10">
+              <p className="text-xl md:text-2xl font-extrabold">Información personal</p>
               <FormField
                 control={form.control}
                 name="nombre"
@@ -186,8 +186,8 @@ export default function ContactForm() {
             </div>
 
             {/* Car Info */}
-            <div className="flex flex-col gap-5 w-full px-20">
-              <p className="text-2xl font-extrabold">Datos del vehículo</p>
+            <div className="flex flex-col gap-5 w-full px-10">
+              <p className="text-xl md:text-2xl font-extrabold">Datos del vehículo</p>
 
               <div className="flex justify-between gap-3">
                 <div className="w-3/6">

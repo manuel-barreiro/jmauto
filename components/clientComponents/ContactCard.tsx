@@ -17,7 +17,7 @@ function ContactCard() {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      transition= {{ duration: 0.3, delay: 0.5 }}
+      transition= {{ duration: 0.3, delay: 0.8 }}
       className="absolute inset-0 px-4 md:px-6 flex justify-end items-center"
     >
           <div className="flex flex-col space-y-6 p-12 md:p-20 rounded-md shadow-lg bg-white w-[80dvh]">

@@ -16,7 +16,7 @@ export default function NotFound() {
                             <h1 className="my-2 text-gray-800 font-bold text-2xl">
                             ¡Oops! Parece que te has desviado del camino.
                             </h1>
-                            <p className="my-2 text-gray-800">Regresa y sigue explorando nuestro sitio web para encontrar lo que buscas.</p>
+                            <p className="my-2 text-gray-800">Volvé y seguí explorando nuestro sitio web para encontrar lo que buscas.</p>
                             <button
                               className='px-4 py-2 rounded-md text-white bg-buttonBlue border border-buttonBlue hover:bg-white hover:text-buttonBlue duration-300 w-32'
                             >

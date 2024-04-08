@@ -12,11 +12,11 @@ function HeroText() {
         animate={{ y: 0,  opacity: 1 }}
         transition= {{ duration: 0.1, delay: 0.5 }}
       > 
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-3">
-        Vendé tu auto.</h1>
         <h2 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-3">
+        Vendé tu auto.</h2>
+        <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold text-center mb-3">
         Fácil, rápido y seguro.
-        </h2>
+        </h3>
         
         <p className="mt-4 text-lg md:text-xl lg:text-2xl text-white text-center">En Z&Z Automotores lo hacemos posible.</p>
         <Link

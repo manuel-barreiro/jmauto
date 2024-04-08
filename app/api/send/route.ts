@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import * as React from 'react';
 
-const resend = new Resend('re_123');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
 
@@ -23,20 +23,25 @@ export async function POST(request: Request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'JM Automotores <consultas@jmauto.com.ar>',
+      from: 'Z&Z Automotores <consultas@zzautomotores.com.ar>',
       to: [`${'ing.mbarreiro@gmail.com'}`],
-      subject: `Consulta ${nombre}`,
+      subject: `Consulta - ${nombre}`,
       react: EmailTemplate({
-        nombre,
+        nombre, 
+        email,
+        telefono,
+        mensaje,
+        marca,
+        modelo,
+        ano,
+        kilometraje,
+        info
       }) as React.ReactElement,
     });
 
-    if (error) {
-      return NextResponse.json({ error, consulta });
-    }
-
     return NextResponse.json({ data });
+
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error, consulta });
   }
 }

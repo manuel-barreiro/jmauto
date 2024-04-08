@@ -206,7 +206,7 @@ const Nav = () => {
                                             <FaFacebookF />
                                         </span>
                                     </a>
-                                    <a href="https://instagram.com/" target="_blank">
+                                    <a href="https://www.instagram.com/zz_automotores_?igsh=bm9oOXowbWQ0NTBz" target="_blank">
                                         <span className="w-8 h-8 text-md text-white bg-black rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                                             <FaInstagram />
                                         </span>

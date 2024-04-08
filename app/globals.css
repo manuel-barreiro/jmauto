@@ -7,6 +7,12 @@ html, body, main {
   scroll-behavior: smooth!important;
   }
 
+input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+
 
 /* html, body {
   overflow-x: hidden;

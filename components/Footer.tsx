@@ -67,13 +67,17 @@ function Footer() {
           <div>
             <h4 className="text-white text-lg font-semibold">Contacto</h4>
             <ul className="mt-2 text-white">
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
-              <FaFacebook /> 
-              <span>ZZ_automotores_</span>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank" className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
+                <FaFacebook /> 
+                <span>ZZ_automotores_</span>
+                </a>
               </li>
-              <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
-              <FaInstagram/> 
-              <span>ZZ_automotores_</span>
+              <li>
+                <a href="https://www.instagram.com/zz_automotores_?igsh=bm9oOXowbWQ0NTBz" target="_blank" className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
+                  <FaInstagram/> 
+                  <span>ZZ_automotores_</span>
+                </a>
               </li>
             </ul>
           </div>

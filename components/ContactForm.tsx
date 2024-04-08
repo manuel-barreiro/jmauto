@@ -122,7 +122,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Nombre completo</FormLabel>
                     <FormControl>
-                      <Input placeholder="" {...field} />
+                      <Input placeholder="" className="text-[16px]" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -139,7 +139,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Email</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -155,7 +155,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Teléfono</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -175,7 +175,7 @@ export default function ContactForm() {
                     <FormControl>
                       <Textarea 
                         placeholder=""
-                        className="resize-none"
+                        className="resize-none text-[16px]"
                         {...field} 
                       />
                     </FormControl>
@@ -198,7 +198,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Marca</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -214,7 +214,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Modelo</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -234,7 +234,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Año</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -250,7 +250,7 @@ export default function ContactForm() {
                       <FormItem>
                         <FormLabel>Kilometraje</FormLabel>
                         <FormControl>
-                          <Input className="w-full" placeholder="" {...field} />
+                          <Input className="w-full text-[16px]" placeholder="" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -270,7 +270,7 @@ export default function ContactForm() {
                     <FormControl>
                       <Textarea 
                         placeholder=""
-                        className="resize-none"
+                        className="resize-none text-[16px]"
                         {...field} 
                       />
                     </FormControl>

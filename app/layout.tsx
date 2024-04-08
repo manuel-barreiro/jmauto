@@ -9,8 +9,10 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.zzautomotores.com.ar/"),
   title: "Z&Z Automotores",
   description: "Compramos tu auto en tiempo récord",
+  themeColor: 'white',
   icons: {
     icon: [
       {
@@ -25,6 +27,13 @@ export const metadata: Metadata = {
       }
     ],
     apple: '/apple-icon.png',
+  },
+  openGraph: {
+    images: '/apple-icon.png',
+    title: 'Z&Z Automotores',
+    description: 'Compramos tu auto en tiempo récord',
+    type: "website",
+    url: "https://www.zzautomotores.com.ar/"
   },
 };
 

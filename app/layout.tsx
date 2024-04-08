@@ -3,16 +3,21 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-
-
+import type { Viewport } from 'next'
+ 
+export const viewport: Viewport = {
+  themeColor: 'white',
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.zzautomotores.com.ar/"),
+  alternates: {
+    canonical: 'https://www.zzautomotores.com.ar/'
+  },
   title: "Z&Z Automotores",
   description: "Compramos tu auto en tiempo récord",
-  themeColor: 'white',
   icons: {
     icon: [
       {

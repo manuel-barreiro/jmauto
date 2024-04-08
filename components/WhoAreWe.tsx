@@ -6,7 +6,8 @@ export default function Component() {
   return (
     <section id='quienesSomos' className="relative w-full py-12 md:py-24 lg:py-32">
       <Image
-        alt="Luxury Car"
+        alt="Compramos tu auto"
+        title='Compramos tu auto'
         priority={true}
         className="absolute inset-0 object-cover w-full h-full"
         src={handshake}

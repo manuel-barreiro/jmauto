@@ -9,6 +9,7 @@ export default function Component() {
         alt="Luxury Car"
         priority={true}
         className="absolute inset-0 object-cover w-full h-full"
+        title="Z&Z Automotores"
         src={contact}
       />
 

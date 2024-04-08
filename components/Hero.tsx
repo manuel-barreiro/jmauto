@@ -10,7 +10,8 @@ export default function Component() {
   return (
     <section className="relative w-full h-[600px] md:h-[600px] lg:h-[700px]">
       <Image
-        alt="Luxury Car"
+        alt="Concesionaria de autos"
+        title="Zz automotores"
         priority={true}
         className="absolute inset-0 object-cover w-full h-full"
         src={deal}

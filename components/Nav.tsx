@@ -30,7 +30,7 @@ const Nav = () => {
         transition= {{ duration: 1 }}
       >
         <Link href="/">
-          <Image src={jmBlack} width={130} height={130} priority={true} title="JM Logo" alt="JM Logo" />
+          <Image src={jmBlack} width={130} height={130} priority={true} title="ZZ Logo" alt="ZZ Logo" />
         </Link>
       </motion.div>
 

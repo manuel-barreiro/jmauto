@@ -14,10 +14,10 @@ function Footer() {
 
         <div className="flex flex-wrap gap-x-32 gap-y-10 justify-start">
 
-          <Image src={jmWhite} width={150} alt="JM Logo"/>
+          <Image src={jmWhite} width={150} alt="Z&Z Logo" title="Z&Z Logo"/>
 
           <div>
-            <h4 className="text-white text-lg font-semibold">Mapa del sitio</h4>
+            <h3 className="text-white text-lg font-semibold">Mapa del sitio</h3>
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
                 <Link href='/#quienesSomos'>
@@ -43,7 +43,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-lg font-semibold">Contacto</h4>
+            <h3 className="text-white text-lg font-semibold">Contacto</h3>
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaPhone /> 
@@ -65,7 +65,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-lg font-semibold">Contacto</h4>
+            <h3 className="text-white text-lg font-semibold">Contacto</h3>
             <ul className="mt-2 text-white">
               <li>
                 <a href="https://www.facebook.com/" target="_blank" className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">

@@ -34,7 +34,8 @@ function NuestraAgencia() {
           <CarouselItem>
             <div className="flex items-center justify-center p-1">
               <Image
-                alt="Image"
+                alt="Compramos tu auto"
+                title='Compramos tu auto'
                 className="aspect-video object-cover rounded-md "
                 src={autos}
 
@@ -44,7 +45,8 @@ function NuestraAgencia() {
           <CarouselItem>
             <div className="flex items-center justify-center p-1">
               <Image
-                alt="Image"
+                alt="Compramos tu auto"
+                title='Compramos tu auto'
                 className="aspect-video object-cover rounded-md "
                 src={render1}
               />
@@ -53,7 +55,8 @@ function NuestraAgencia() {
           <CarouselItem>
             <div className="flex items-center justify-center p-1">
               <Image
-                alt="Image"
+                alt="Compramos tu auto"
+                title='Compramos tu auto'
                 className="aspect-video object-cover rounded-md "
                 src={render2}
               />

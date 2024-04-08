@@ -6,7 +6,7 @@ function CotizaTuVehiculo() {
   return (
     <section id="cotiza" className="flex flex-col bg-grayBg w-full py-12 md:py-24 lg:py-32">
       <div className="flex flex-col justify-evenly items-center gap-5">
-        <Image src={jmBlack} alt="logo" width={200} />
+        <Image src={jmBlack} alt="logo" width={200} title="Logo" />
 
         <p className="text-3xl font-bold tracking-tighter sm:text-5xl">Cotizá tu vehículo</p>
 

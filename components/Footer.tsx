@@ -47,15 +47,15 @@ function Footer() {
             <ul className="mt-2 text-white">
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaPhone /> 
-              <a href='tel:+5491166726968'>+54 9 11 6672 6967 </a>
+              <a href='tel:+5491133048066'>+54 9 11 3304 8066 </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaWhatsapp /> 
-              <a href='https://wa.me/+5491133048066' target='_blank'>+54 9 11 6672 6967 </a>
+              <a href='https://wa.me/+5491133048066' target='_blank'>+54 9 11 3304 8066 </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <MdEmail /> 
-              <a href="mailto:zz_automotores@gmail.com">zz_automotores@gmail.com </a>
+              <a href="mailto:asesoramiento@zzautomotores.com.ar">asesoramiento@zzautomotores.com.ar </a>
               </li>
               <li className="hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer flex items-center gap-2">
               <FaLocationDot /> 

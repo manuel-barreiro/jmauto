@@ -25,17 +25,17 @@ function ContactCard() {
             <p className="max-w-[600px] text-gray-500 md:text-xl">
               Estamos listos para ayudarte.
             </p>
-            <a href="tel:+5491166726968" className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+            <a href="tel:+5491133048066" className="max-w-[600px] text-black font-bold text-xs md:text-lg flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <FaPhone />
-              +54 9 11 6672 6968
+              +54 9 11 3304 8066
             </a>
-            <a href="https://wa.me/+5491133048066" target='_blank' className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+            <a href="https://wa.me/+5491133048066" target='_blank' className="max-w-[600px] text-black font-bold text-xs md:text-lg flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <FaWhatsapp />
-              +54 9 11 6672 6968
+              +54 9 11 3304 8066
             </a>
-            <a href="mailto:zz_automotores@gmail.com" className="max-w-[600px] text-black font-bold md:text-xl flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
+            <a href="mailto:asesoramiento@zzautomotores.com.ar" className="max-w-[600px] text-black font-bold text-xs md:text-lg flex gap-2 items-center hover:underline underline-offset-4 duration-300 ease-in-out cursor-pointer">
               <MdEmail />
-              ZZ_automotores@gmail.com
+              <span>asesoramiento@zzautomotores.com.ar</span>
             </a>
           </div>
       </motion.div >

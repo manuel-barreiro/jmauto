@@ -24,7 +24,7 @@ export async function POST(request: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: 'Z&Z Automotores <consultas@zzautomotores.com.ar>',
-      to: [`${'ing.mbarreiro@gmail.com'}`],
+      to: [`${'asesoramiento@zzautomotores.com.ar'}`],
       subject: `Consulta - ${nombre}`,
       react: EmailTemplate({
         nombre, 
